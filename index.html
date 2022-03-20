@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Arka Design Studio</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Arka</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#Research" class="nav__link">Research</a></li>
+                        <li class="nav__item"><a href="#Projects" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="#Awards" class="nav__link">Awards</a></li>
+                        <li class="nav__item"><a href="#Courses" class="nav__link">Courses</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Arka Majhi</span><br>Health Researcher <br>Data Enthusiast <br>Game Designer </h1>
+
+                    <a href="#contact" class="button">Contact</a>
+                    <a href="assets\img\Arka Resume.pdf" target="_blank" class="button">Download Resume</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <!--div class="home__img">
+                    <img src="assets/img/perfil.png" alt="">
+                </div-->
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/about.jpg" alt="">
+                    </div>
+
+                    <div>
+                        <h2 class="about__subtitle">Academics</h2>
+                        <p class="about__text">I am persuing my doctoral studies from Centre for Technology Alternatives for Rural Areas (CTARA) at Indian Institute of Technology Bombay (IIT-B). My research is on creating Android games, for providing refresher training, evaluation on maternal and child health and nutrition for the Anganwadi workers or community health workers in India, with a special focus on the first 1000 days of life. My research theme is HCI for Development (HCI4D), developing ICT tools for emerging users, who are less literate and less tech-savvy. You can check my published <a href="https://dl.acm.org/doi/10.1145/3429360.3468186" target="_blank" style="color:black;font-weight:bold;"><b>research paper</b></a> in the <a href="#Research" style="color:black;font-weight:bold;">Research</a> section and designed app in Google PlayStore.</p><br>
+                        <h2 class="about__subtitle">Interests</h2>
+                        <p class="about__text">
+                        My interest lies in working with big-geospatial data on public-health, economy, development indicators, etc. and turn big datasets into explorative and interactive data visualizations. <br><br>You can check the Data Visualization project of Covid-19 cases in India (State and District wise) in the <a href="#Projects" style="color:black;font-weight:bold;">Projects</a> section.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="Research">
+                <h2 class="section-title">Published Research Papers</h2>
+
+                <div class="skills__container bd-grid">
+                    <div>
+                        <h2 class="skills__subtitle"><a href="https://dl.acm.org/doi/10.1145/3429360.3468186" target="_blank" style="color:black">Refresher Training through Quiz App for capacity building of Community Healthcare Workers or Anganwadi Workers in India</a></h2>
+
+                        <p class="skills__text"><span id="abstract">An android based quiz app was designed, following Anganwadi Workers training modules’ content and need assessment results. The study investigates the quiz app’s effectiveness and compares it with conventional classroom instruction, with a group of Anganwadi Workers, and discusses ways to make it an adequate substitute.</span>
+                          <span id="dots">...</span>
+                          <span id="more">High and persistent child malnutrition levels with tardy reduction, seen in successive health surveys, continue to be a matter of concern in India, drawing attention to the need to revamp the four-decade-old Government program, Integrated Child Development Scheme (ICDS). ICDS field functionaries or Anganwadi Workers’ (AWWs) capacity deficit was identified as a significant factor affecting ICDS’s effectiveness. Considering rising numbers, over 1.4 million AWWs, and continuously advancing knowledge of community healthcare, conventional training pedagogy is ineffective in building and updating AWWs and their supervisors’ capacity, which calls for rethinking, using the ICT approach.<br><br>Over 6 lakh AWWs in India were smartphone equipped by 2020. An android based quiz app was designed, following AWWs training modules’ content and need assessment results. The study investigates the quiz app’s effectiveness and compares it with conventional classroom instruction, with a group of AWWs, and discusses ways to make it an adequate substitute</span></p>
+                        <button onclick="showmore()" id="myBtn">Read more</button>
+                        <br><br>Click <a href="https://dl.acm.org/doi/10.1145/3429360.3468186" target="_blank" style="color:black;font-weight:bold;">here</a> to read the full paper
+                        <br><br>Click on the video to watch the paper presentation
+                      </p>
+
+                    </div>
+                    <div class="work__img">
+                        <!--a href="https://dl.acm.org/doi/10.1145/3429360.3468186" target="_blank"><img src="assets/img/work1.jpg" alt=""-->
+
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/a_9Ju1TEeuw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </a>
+                    </div>
+                </div>
+            </section>
+
+            <script>
+              function showmore() {
+              var abstract = document.getElementById("abstract");
+              var dots = document.getElementById("dots");
+              var moreText = document.getElementById("more");
+              var btnText = document.getElementById("myBtn");
+
+              if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+                abstract.style.display = "inline";
+              } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+                abstract.style.display = "none";
+              }
+              }
+            </script>
+
+
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="Projects">
+                <h2 class="section-title">Projects</h2>
+
+                <div class="skills__container bd-grid">
+                    <div>
+                        <h2 class="skills__subtitle">Data Visualization of Covid-19 cases in India (State and District wise)</h2>
+                        <p class="skills__text">
+                          We are happy to note that, WHO has also found these maps useful for their India Situation Reports (
+                            <a href="https://www.who.int/docs/default-source/wrindia/situation-report/india-situation-report-9.pdf?sfvrsn=c883d0c2_2" target="_blank">WHO Report 9 on 28<sup>th</sup> March</a>,
+                            <a href="https://www.who.int/docs/default-source/wrindia/situation-report/india-situation-report-10.pdf?sfvrsn=48298da5_2" target="_blank">WHO Report 10 on 5<sup>th</sup> April</a> and
+                            <a href="https://www.who.int/docs/default-source/wrindia/situation-report/india-situation-report-15.pdf?sfvrsn=48298da5_2" target="_blank">WHO Report 15 on 10<sup>th</sup> May</a> )
+
+                            <br><br>Click <a href="https://arkadesignstudio.in/dataviz/" target="_blank" style="color:black"><b>here</b></a> to see the data visualization project
+                        </p>
+                    </div>
+                    <div>
+                        <!--img src="assets/img/work3.jpg" alt="" class="skills__img"-->
+                        <div class="" style="padding-top:0%;">
+                          <center><h3><strong>District-wise confirmed COVID-19 cases in India</strong></h3>
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="skills__subtitle">Novel interactions for navigating in VR sports</h2>
+                        <p class="skills__text">
+                          Enhancing immersion in Virtual Reality sports through novel physical interactions and haptic feedbacks
+                          <br><br>Click on the video to watch the promo video of the project.
+                          <br><br>Click <a href="https://www.youtube.com/watch?v=Yo3DpL-ajEQ" target="_blank" style="color:black"><b>here</b></a> to watch the working details of the project.
+                        </p>
+                    </div>
+                    <div>
+                        <!--img src="assets/img/work3.jpg" alt="" class="skills__img"-->
+                        <div class="" style="padding-top:0%;">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/gR4iuzwCNu4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <!--div>
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
+                        <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
+                    </div>
+                    <div>
+                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                    </div-->
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="Awards">
+                <h2 class="section-title">Awards</h2>
+
+                <div class="skills__container bd-grid">
+
+                    <div>
+                        <h2 class="skills__subtitle">Best Paper Award</h2>
+                        <p class="skills__text">Best Paper Award in long paper category in Asian CHI Symposium 2021 in CHI 2021 for the paper titled : <a href="https://dl.acm.org/doi/10.1145/3429360.3468186" target="_blank" style="color:black; font-weight:bold;">Refresher Training through Quiz App for capacity building of Community Healthcare Workers or Anganwadi Workers in India</a></p>
+                    </div>
+                    <div>
+                        <img src="assets/img/AsianCHIAward.jpg" alt="" class="skills__img">
+                    </div>
+
+                    <div>
+                        <h2 class="skills__subtitle">Prime Minister Research Fellowship</h2>
+                        <p class="skills__text">Prime Minister Research Fellowship for doctoral research in collaboration with SERB-FICCI and UNICEF India</p>
+                    </div>
+                    <div>
+                        <img src="assets/img/PMRF.jpg" alt="" class="skills__img">
+                    </div>
+
+                    <div>
+                        <h2 class="skills__subtitle">Masters in Design (2016-18)</h2>
+                        <p class="skills__text">Masters in Design from Industrial Design Centre (IDC), Indian Institute of Technology Bombay (IIT-B)</p>
+                    </div>
+                    <div>
+                        <img src="assets/img/IDC.jpg" alt="" class="skills__img">
+                    </div>
+
+                    <div>
+                        <h2 class="skills__subtitle">Bachelors in Architecture (2011-16)</h2>
+                        <p class="skills__text">Bachelors in Architecture from School of Planning and Architecture, New Delhi (SPA Delhi)</p>
+                    </div>
+                    <div>
+                        <img src="assets/img/SPA.jpg" alt="" class="skills__img">
+                    </div>
+
+
+                    <!--div>
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
+                        <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
+                    </div>
+                    <div>
+                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                    </div-->
+
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="Courses">
+                <h2 class="section-title">Cerificate Courses</h2>
+
+                <div class="work__container bd-grid">
+                    <div class="">
+                      <div class="work__img">
+                          <a href="assets\img\Unicef Cornell 1.jpg" target=""><img src="assets\img\Unicef Cornell 1.jpg" alt=""></a>
+                      </div>
+                      <center><br>Programming for Infant and Young Child Feeding Course from Cornell University and UNICEF (2020)</center>
+                    </div>
+
+                    <div class="">
+                      <div class="work__img">
+                          <a href="assets\img\Unicef Cornell 2.jpg" target=""><img src="assets\img\Unicef Cornell 2.jpg" alt=""></a>
+                      </div>
+                      <center><br>Programming for Infant and Young Child Feeding Course from Cornell University and UNICEF (2019)</center>
+                    </div>
+
+                    <div class="">
+                      <div class="work__img">
+                          <a href="assets\img\ISRO2.jpg" target=""><img src="assets\img\ISRO2.jpg" alt=""></a>
+                      </div>
+                      <center><br>Geospatial Applications for Diaster Risk Management - Jointly conducted by CSSTEAP, UN-SPIDER and ISRO</center>
+                    </div>
+
+
+                </div>
+
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <p style="text-align: center;">Email <i class='bx bx-mail-send' ></i> :&nbsp;<a href="mailto:arka.majhi@iitb.ac.in" target="_blank" rel="noopener"><strong>arka.majhi[at]iitb.ac.in</strong></a></p>
+                <br>
+                <p style="text-align: center;">Whatsapp <i class='bx bxl-whatsapp' ></i> : Click &nbsp;<a href="https://wa.me/918910689698" target="_blank"><strong>here</strong></a></p>
+
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Arka Majhi</p>
+            <div class="footer__social">
+                <!--a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a-->
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <p>&#169; 2021 copyright all right reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
