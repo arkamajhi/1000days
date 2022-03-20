@@ -1,0 +1,73 @@
+body
+{
+    overscroll-behavior-y: contain;
+}
+main
+{
+  width: 95%;
+  /*height: 100vh;*/
+  margin-inline: auto;
+}
+.container
+{
+  background-color: rgba(238, 238,238);
+  padding: 1em;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1em;
+  border-radius: 1em;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+}
+.container:hover
+{
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.container:nth-child(odd)
+{
+  background-color: pink;
+}
+
+.container:nth-child(even)
+{
+  background-color: coral;
+}
+
+.card
+{
+  cursor: pointer;
+  flex-basis: 125px;
+  padding: 0;
+  background-color: white;
+  border-radius: 1em;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.card:hover
+{
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.card>p
+{
+  display: block;
+  font-size: 2em;
+  text-align: center;
+}
+main h2
+{
+  font-size: 2em;
+  text-align: center;
+  padding-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+container:first-child>.card>h2{color:rgb(0,157,225)}
+container:last-child>.card>h2{color:coral}
+
+.dragging
+{
+  opacity: 0.8;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
