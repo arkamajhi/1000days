@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/dragAndDropStyle.css">
+        <meta name="theme-color" content="#009578">
+        <link rel="manifest" href="manifest.json">
+        <title>Child Immunization</title>
+        <!--meta http-equiv="refresh" content="20"-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+        <link rel="apple-touch-icon" href="images/logo192.png">
+    </head>
+
+    <body>
+
+      <div id="timer"></div>
+
+      <div id="background1" class="bgrect"><div class="vertical-center ages">0 months <div class="tick"></div> </div></div>
+      <div id="background2" class="bgrect"><div class="vertical-center ages">1 <sup>1</sup>&frasl;<sub>2</sub> months <div class="tick"></div> </div></div>
+      <div id="background3" class="bgrect"><div class="vertical-center ages">2 <sup>1</sup>&frasl;<sub>2</sub> months <div class="tick"></div> </div></div>
+      <div id="background4" class="bgrect"><div class="vertical-center ages">3 <sup>1</sup>&frasl;<sub>2</sub> months <div class="tick"></div> </div></div>
+      <div id="background5" class="bgrect"><div class="vertical-center ages">9 months <div class="tick"></div> </div></div>
+      <div id="background6" class="bgrect"><div class="vertical-center ages">1 <sup>1</sup>&frasl;<sub>2</sub> years <div class="tick"></div> </div></div>
+      <div id="background7" class="bgrect"><div class="vertical-center ages">2-5 years <div class="tick"></div> </div></div>
+      <div id="background8" class="bgrect"><div class="vertical-center ages">5-6 years <div class="tick"></div> </div></div>
+      <div id="background9" class="bgrect"><div class="vertical-center ages">10 years <div class="tick"></div> </div></div>
+      <div id="background10" class="bgrect"><div class="vertical-center ages">16 years <div class="tick"></div> </div></div>
+
+        <div id="draggableContainer">
+            <div class="draggableItem" id = "1A" draggable="true">OPV-0</div>
+            <div class="draggableItem" id = "1B" draggable="true">Hep-B</div>
+            <div class="draggableItem" id = "1C" draggable="true">BCG</div>
+            <div class="draggableItem" id = "1D" draggable="true">Vita-K</div>
+            <div class="draggableItem" id = "1E" draggable="true">Colostrum Feeding</div>
+
+            <div class="draggableItem" id = "2A" draggable="true">OPV-1</div>
+            <div class="draggableItem" id = "2B" draggable="true">Penta-1</div>
+            <div class="draggableItem" id = "2C" draggable="true">Rota-1</div>
+            <div class="draggableItem" id = "2D" draggable="true">PCV-1</div>
+            <div class="draggableItem" id = "2E" draggable="true">IPV-1</div>
+
+            <div class="draggableItem" id = "3A" draggable="true">OPV-2</div>
+            <div class="draggableItem" id = "3B" draggable="true">Penta-2</div>
+            <div class="draggableItem" id = "3C" draggable="true">Rota-2</div>
+
+            <div class="draggableItem" id = "4A" draggable="true">OPV-3</div>
+            <div class="draggableItem" id = "4B" draggable="true">Penta-3</div>
+            <div class="draggableItem" id = "4C" draggable="true">Rota-3</div>
+            <div class="draggableItem" id = "4D" draggable="true">PCV-2</div>
+            <div class="draggableItem" id = "4E" draggable="true">IPV-2</div>
+
+            <div class="draggableItem" id = "5A" draggable="true">MR-1</div>
+            <div class="draggableItem" id = "5B" draggable="true">JE-1</div>
+            <div class="draggableItem" id = "5C" draggable="true">PCV Booster</div>
+            <div class="draggableItem" id = "5D" draggable="true">Vita A Doze-1</div>
+
+            <div class="draggableItem" id = "6A" draggable="true">MR-2</div>
+            <div class="draggableItem" id = "6B" draggable="true">JE-2</div>
+            <div class="draggableItem" id = "6C" draggable="true">OPV Booster</div>
+            <div class="draggableItem" id = "6D" draggable="true">DPT Booster-1</div>
+            <div class="draggableItem" id = "6E" draggable="true">Vita A Doze-2</div>
+            <div class="draggableItem" id = "6F" draggable="true">Deworming-1</div>
+
+            <div class="draggableItem" id = "7A" draggable="true">Vita A Doze-3 to 9</div>
+            <div class="draggableItem" id = "7B" draggable="true">Deworming-2 to 4</div>
+
+            <div class="draggableItem" id = "8A" draggable="true">DPT Booster-2</div>
+
+            <div class="draggableItem" id = "9A" draggable="true">TD-1</div>
+
+            <div class="draggableItem" id = "10A" draggable="true">TD-2</div>
+
+        </div>
+
+
+
+        <style>
+          #timer
+          {
+            text-align: center;
+            font-size: 1.5em;
+            margin-top: 80vh;
+            margin-bottom: 50px;
+            left: 50vw;
+            position: fixed;
+            background:#A9333A;
+            color: white;
+            padding: 10px;
+            border: 1px solid white;
+            border-radius: 15px;
+            z-index: 1000;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+            animation: timerscaling  alternate infinite ease-in-out;
+          }
+          @keyframes timerscaling
+          {
+            0%   {transform: scale(.95) translate(-50%, 0);}
+            100% {transform: scale(1) translate(-50%, 0);}
+          }
+        </style>
+
+        <script>
+          // Set the date we're counting down to
+          //var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
+
+          var now = new Date();
+          now.setMinutes(now.getMinutes() + 5); // timestamp
+          now.setSeconds(now.getSeconds() + 2); // timestamp
+          now = new Date(now); // Date object
+
+          var countDownDate=now;
+          var speedinit=1.5;
+          var deltaspeed=1/60;
+
+          // Update the count down every 1 second
+          var x = setInterval(function()
+          {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("timer").innerHTML = minutes + " min " + seconds + " sec";
+            document.getElementById("timer").style.animationDuration = speedinit-deltaspeed+"s";
+            //speedinit-=deltaspeed;
+
+            // If the count down is over, write some text
+            if (distance < 0)
+            {
+              clearInterval(x);
+              document.getElementById("demo").innerHTML = "EXPIRED";
+              alert("Time's Up");
+            }
+          }, 1000);
+        </script>
+
+        <script>
+          if('serviceworker' in navigator)
+          {
+            navigator.serviceworker.register('service-worker.js');
+          }
+        </script>
+
+        <script src="javaScript/script.js"> </script>
+        <script src="javaScript/jQuery-3.5.1.js"> </script>
+
+    </body>
+
+</html>
