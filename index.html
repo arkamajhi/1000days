@@ -10,10 +10,61 @@
   </head>
   <body>
 
-    <h1>Hello, world!</h1>
+    <div class="header">
+      <h4>Playful Activities on Child Immunization</h4>
+    </div>
+
+    <div class="row centered">
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col">
+            <center>
+              <a href="Child_Imm_Lvl1/index.html"><div class="box">Child immunization Level-1</div></a>
+            </center>
+          </div>
+
+          <div class="col">
+            <center>
+              <a href="Child_Imm_Lvl2/index.html"><div class="box">Child immunization Level-2</div></a>
+            </center>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
+    <script>
+      window.setInterval('refresh()', 1000);
+      // Call a function every 10000 milliseconds
+      // (OR 10 seconds).
+
+      // Refresh or reload page.
+      function refresh() {
+          window .location.reload();
+      }
+    </script>
+
   </body>
+
+  <style media="screen">
+    .box
+    {
+      background-color: blue;
+      color: white;
+      text-align: center;
+      border-radius: 100px;
+      padding: 2vw;
+    }
+    .header
+    {
+      text-align: center;
+      padding: 2vw;
+    }
+  </style>
 </html>
